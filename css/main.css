@@ -1,0 +1,48 @@
+body{
+    font-family: 'Roboto Mono', monospace; 
+}
+
+h1{
+   font-size:0.9em;
+   margin-left:0.9em;
+}
+
+main{
+position:absolute;
+top: 10%;
+left:20%;
+}/*Se añade position:absolute solo para centrar un poco la imagen*/
+
+.line{
+    width:7%;
+    height:0.3em;
+    background:#000;
+    border-radius:2em;/*Para redondear los bordes*/
+    margin-left:0.6em;
+}
+
+.section1{
+    overflow:hidden;
+}
+/*Se usa overflow: hidden para que sus elementos hijos puedan ser contenidos otra vez en el padre*/
+.section2{
+    overflow:hidden;
+}
+
+.box{
+    width:9.5em;
+    float:left;
+    margin:0.5em;
+    position:relative;   
+}/*Se usa position:relative, solo para posicionar este elemento y que sus elementos hijos (en este caso p) lo tomen como referencia a el*/
+
+p{
+    font-size:0.5em;
+    font-weight:bold;
+    color:#fff;
+    width:15em;
+    position:absolute;
+    bottom:1em;
+    right:1em;
+    text-align:right;
+}/*Se usó position:absolute para colocar el elemento p encima de las imágenes*/
